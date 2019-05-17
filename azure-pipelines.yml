@@ -9,9 +9,6 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-variables:
-  ghPat: 'xxxx'
-
 steps:
 - script: 'git push -f https://$(ghPat)@github.com/hong-revo/testrepo'
   displayName: 'Copy to mirror repo'

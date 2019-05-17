@@ -13,10 +13,6 @@ variables:
   ghPat: 'a71310406e81b690fe2363a843de5359a0e5fcf0'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- script: 'git push -f https://$(ghPat)@github.com/hong-revo/testrepo'
+  displayName: 'Copy to mirror repo'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'

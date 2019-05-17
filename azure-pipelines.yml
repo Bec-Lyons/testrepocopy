@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  ghPat: 'a71310406e81b690fe2363a843de5359a0e5fcf0'
+  ghPat: 'xxxx'
 
 steps:
 - script: 'git push -f https://$(ghPat)@github.com/hong-revo/testrepo'

@@ -10,6 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: 'git push -f https://$(ghPat)@github.com/hong-revo/testrepo'
+#- script: 'git push -f https://$(ghPat)@github.com/hong-revo/testrepo'
+- script: 'ls -al'
   displayName: 'Copy to mirror repo'
 
